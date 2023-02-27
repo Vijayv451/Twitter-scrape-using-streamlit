@@ -1,5 +1,7 @@
+#overview 
+Streamlit is a python package which is used to build the WebGUI applications for machine learning and data science.
+
 %%writefile streamlit.py
-#Import all packages
 import streamlit as st
 import pandas as pd
 import snscrape.modules.twitter as sntwitter
@@ -83,3 +85,9 @@ def main():
             
 if __name__ == "__main__":
     main()
+    
+#Run the command 
+Write Streamlit code in jupyter Notebook.
+Run the below commands in the command prompt,
+jupyter nbconvert --to script Streamlit_Jupyter.ipynb 
+streamlit run streamlit.py
